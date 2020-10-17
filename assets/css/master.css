@@ -1,9 +1,7 @@
 body{
     display: grid;
     grid-template-columns: 50px 1fr 50px;
-}
-h1 {
-    text-align: center;
+    grid-template-rows: 1fr 1fr;
 }
 section{
     width: 100%;
