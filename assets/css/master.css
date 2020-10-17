@@ -1,9 +1,10 @@
 body {
   display: grid;
-  grid-template-columns: 50px 1fr 50px;
+  grid-template-columns: 1fr;
   grid-template-rows: 50px 1fr, 4fr;
   grid-column-gap: 0px;
   grid-row-gap: 5px;
+  justify-content: center;
 }
 nav {
   grid-area: 1 / 1 / 2 / 4;
@@ -12,13 +13,13 @@ nav {
   position: fixed;
 }
 .jumbotron {
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: 1 / 2 / 2 / 3;
   border-radius: 6px;
 }
 .content-container {
   border: 1px solid lightslategrey;
   border-radius: 6px;
-  grid-area: 3 / 2 / 4 / 3;
+  grid-area: 1 / 2 / 2 / 3;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -34,9 +35,6 @@ nav {
 } */
 p {
   color: lightslategrey;
-}
-.container {
-  grid-area: 3 / 2 / 4 / 3;
 }
 section {
   min-height: 300px;
