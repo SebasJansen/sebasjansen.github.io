@@ -1,22 +1,44 @@
-body{
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    grid-template-rows: 50px 300px 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 5px;
+body {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 50px 1fr, 4fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 5px;
 }
-nav{
-    grid-area: 1 / 1 / 2 / 4;
+nav {
+  grid-area: 1 / 1 / 2 / 4;
+  top: 0;
+  z-index: 100;
+  position: fixed;
 }
-header{
-    grid-area: 2 / 1 / 3 / 4;
-    height: 300px;
+.jumbotron {
+  grid-area: 2 / 2 / 3 / 3;
+  border-radius: 6px;
 }
-.content-container{
-    grid-area: 3 / 2 / 4 / 3;
-    background-color: lightskyblue;
+.content-container {
+  border: 1px solid lightslategrey;
+  border-radius: 6px;
+  grid-area: 3 / 2 / 4 / 3;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-section{
-    width: 100%;
-    height: auto;
+/* .about{
+}
+.projects{
+}
+.udemy{
+}
+.messageboard{
+} */
+p {
+  color: lightslategrey;
+}
+.container {
+  grid-area: 3 / 2 / 4 / 3;
+}
+section {
+  min-height: 300px;
+  width: 100%;
 }

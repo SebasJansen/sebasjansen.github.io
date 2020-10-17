@@ -9,46 +9,57 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-	<nav class="navbar navbar-dark">
-		<div class="container-fluid">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="/">Zee-Apps</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture"></span> Zee-Apps</a>
 			</div>
-			<div class="collapse navbar-collapse">
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/">Login</a></li>
-					<li><a href="/">Sign Up</a></li>
-					<li><a href="/">Logout</a></li>
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
 				</ul>
 			</div>
 		</div>
     </nav>
-    <header class="jumbotron">
-        <div class="container">
+    <div class="container">
+        <div class="jumbotron">
             <h1>Sebastiaan Jansen</h1>
-            <p>Programming my dreams a reality</p>
-            <p>
-                <a class="btn btn-primary btn-large">Send in your project/idea</a>
-            </p>
+            <p>Full-Stack developer in training / Logistic Allrounder / Troubleshooter(SELECT statements master) / Graphic designer</p>
+            <hr>
+            <p>Programming and designing dreams to reality</p>
+            <p><a class="btn btn-primary btn-large">Send in your project/idea</a></p>
         </div>
-    </header>
-    <div class="content-container">
-        <section class="about">
-            <h1>This is the about section</h1>
-        </section>
-        <section class="projects">
-            <h1>This is the project section</h1>
-        </section>
-        <section class="udemy">
-            <h1>This is the udemy overview section</h1>
-        </section>
-        <section class="messageboard">
-            <h1>This is the messageboard section</h1>
-        </section>
-        <footer>
-            <h1>This is the footer</h1>
-        </footer>
+        <div class="content-container">
+            <section class="about">
+                <h1>This is the about section</h1>
+            </section>
+            <section class="projects">
+                <h1>This is the project section</h1>
+            </section>
+            <section class="udemy">
+                <h1>This is the udemy overview section</h1>
+            </section>
+            <section class="messageboard">
+                <h1>This is the messageboard section</h1>
+            </section>
+            <footer>
+                <h1>This is the footer</h1>
+            </footer>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="assets/js/DOM.js"></script>
 </body>
 </html>
